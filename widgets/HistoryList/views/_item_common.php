@@ -35,8 +35,9 @@ use app\widgets\DateTime\DateTime as YiiDataTimeWidget;
 <?php if (isset($footer) || isset($footerDatetime)): ?>
     <div class="bottom-datetime">
         <?php echo isset($footer) ? $footer : '' ?>
+        <?php echo strlen($footer) > 0 ? '<br>' : '' ?>
         <?php if (isset($footerDatetime)): ?>
-            <span class="pull-right"><?= YiiDataTimeWidget::widget(['dateTime' => $footerDatetime]) ?></span><div class="clear clearfix"></div>
+            <span class=""><?= YiiDataTimeWidget::widget(['dateTime' => $footerDatetime]) ?></span><div class="clear clearfix"></div>
         <?php endif; ?>
     </div>
 <?php endif; ?>

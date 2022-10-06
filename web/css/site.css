@@ -142,3 +142,6 @@ a.desc:after {
 .status_change{
     margin-bottom: 40px;
 }
+.list-group-item{
+    padding: 5px 10px 10px 10px;
+}
