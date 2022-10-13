@@ -40,7 +40,7 @@ class SiteController extends Controller
     {
         $model = new HistorySearch();
 
-        return $this->render('export', [
+        return $this->renderFile('/app/views/site/export.php', [
             'dataProvider' => $model->search(Yii::$app->request->queryParams),
             'exportType' => $exportType,
             'model' => $model

@@ -53,5 +53,6 @@ ini_set('memory_limit', '2048M');
     ],
     'exportType' => $exportType,
     'batchSize' => 2000,
+    // mb 'batchSize' => 0,
     'filename' => $filename
 ]);
